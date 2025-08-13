@@ -57,6 +57,13 @@ const ContentWrapper = styled(Container)`
   }
 `;
 
+const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+`;
+
 const Hero = () => {
   const particlesInit = useCallback(async engine => {
     await loadFull(engine);
@@ -100,7 +107,17 @@ const Hero = () => {
       <ContentWrapper>
         <h1 className="gradient-text">나니아랩 AI 엔지니어 교육</h1>
         <p>정답 찾기에서 '질문 만들기'로, AI를 지배하는 인재를 양성합니다.</p>
-        <PillButton size="lg" href="#camps">커리큘럼 바로가기</PillButton>
+        <ButtonWrapper>
+          <PillButton size="lg" href="#camps">커리큘럼 바로가기</PillButton>
+          <PillButton 
+            size="lg" 
+            href="https://remarkable-staircase-dc5.notion.site/AI-1_-23028eaed3db81b6bf7ec5dcb3467514?pvs=74"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            캠프 시즌1 신청하기
+          </PillButton>
+        </ButtonWrapper>
       </ContentWrapper>
     </HeroSection>
   );
