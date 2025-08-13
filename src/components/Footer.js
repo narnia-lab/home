@@ -21,6 +21,16 @@ const Footer = () => {
             <p className="text-white-50 small">
               Designed for the Future of Education.
             </p>
+            <p className="mt-3">
+              <a 
+                href="http://pf.kakao.com/_DZhmn" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white-50"
+              >
+                문의하기 : 카카오톡 나니아랩채널 바로가기
+              </a>
+            </p>
           </Col>
         </Row>
       </Container>
