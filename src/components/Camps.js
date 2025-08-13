@@ -131,7 +131,7 @@ const cardVariants = {
 };
 
 const Camps = () => {
-  const [activeTrack, setActiveTrack] = useState('elite');
+  const [activeTrack, setActiveTrack] = useState('public');
 
   const filteredCamps = campsData.filter(camp => camp.track === activeTrack);
 
@@ -144,16 +144,16 @@ const Camps = () => {
             <p className="lead text-white-50">Elite 트랙과 Public 트랙으로 구성된 체계적인 커리큘럼을 만나보세요.</p>
             <TrackSelector>
               <Button 
-                className={activeTrack === 'elite' ? 'active' : 'inactive'} 
-                onClick={() => setActiveTrack('elite')}
-              >
-                🚀 Elite Track
-              </Button>
-              <Button 
                 className={activeTrack === 'public' ? 'active' : 'inactive'} 
                 onClick={() => setActiveTrack('public')}
               >
                 🌍 Public Track
+              </Button>
+              <Button 
+                className={activeTrack === 'elite' ? 'active' : 'inactive'} 
+                onClick={() => setActiveTrack('elite')}
+              >
+                🚀 Elite Track
               </Button>
             </TrackSelector>
           </Col>
