@@ -21,7 +21,14 @@ const StyledNavbar = styled(Navbar)`
   }
   
   .navbar-brand {
+    display: flex;
+    align-items: center;
     font-weight: 700;
+  }
+
+  .navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
   }
 
   @media (max-width: 991.98px) {
@@ -55,7 +62,9 @@ const Header = () => {
   return (
     <StyledNavbar scrolled={scrolled.toString()} expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand href="#home" className="gradient-text">NARNIA LAB</Navbar.Brand>
+        <Navbar.Brand href="#home" className="gradient-text">
+          NARNIA LAB
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ borderColor: 'rgba(255,255,255,0.1)' }} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">

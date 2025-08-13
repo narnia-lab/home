@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -10,6 +11,23 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <Helmet>
+        <title>나니아랩 | AI 엔지니어 교육 커리큘럼</title>
+        <meta
+          name="description"
+          content="나니아랩 AI 엔지니어 교육: 정답 찾기에서 '질문 만들기'로, AI를 지배하는 인재를 양성합니다."
+        />
+        <link rel="canonical" href="https://narnia-lab.github.io/home" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="나니아랩 | AI 엔지니어 교육 커리큘럼" />
+        <meta property="og:description" content="나니아랩 AI 엔지니어 교육: 정답 찾기에서 '질문 만들기'로, AI를 지배하는 인재를 양성합니다." />
+        <meta property="og:image" content="https://narnia-lab.github.io/home/logo.jpg" />
+        <meta property="og:url" content="https://narnia-lab.github.io/home" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="나니아랩 | AI 엔지니어 교육 커리큘럼" />
+        <meta property="twitter:description" content="나니아랩 AI 엔지니어 교육: 정답 찾기에서 '질문 만들기'로, AI를 지배하는 인재를 양성합니다." />
+        <meta property="twitter:image" content="https://narnia-lab.github.io/home/logo.jpg" />
+      </Helmet>
       <Header />
       <main>
         <Hero />
