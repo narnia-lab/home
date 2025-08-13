@@ -25,6 +25,7 @@ function App() {
         aria-label="카카오톡 채널로 문의하기"
       >
         <RiKakaoTalkFill />
+        <span>문의하기</span>
       </a>
     </div>
   );
