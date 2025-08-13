@@ -44,6 +44,7 @@ const ContentWrapper = styled(Container)`
     color: var(--text-color-darker);
     margin: 1.5rem 0 2.5rem;
     text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    font-weight: 600;
   }
 
   @media (max-width: 768px) {

@@ -64,6 +64,7 @@ const CampCard = styled(motion.div)`
 
   p strong {
     color: var(--text-color);
+    font-weight: 700;
   }
 
   @media (max-width: 768px) {
