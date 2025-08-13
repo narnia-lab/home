@@ -2,7 +2,7 @@
   "name": "narnia-curriculum-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://narnia-lab.github.io/curriculum",
+  "homepage": "https://narnia-lab.github.io/home",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
