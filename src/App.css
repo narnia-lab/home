@@ -15,7 +15,7 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
   color: var(--text-color);
 }
 
@@ -53,6 +53,11 @@ button {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 /* Form Control Styling */
@@ -155,4 +160,3 @@ button {
   width: auto;
   margin-left: 0.5rem;
 }
-

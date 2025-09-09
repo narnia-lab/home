@@ -109,14 +109,6 @@ const Hero = () => {
         <p>정답 찾기에서 '질문 만들기'로, AI를 지배하는 인재를 양성합니다.</p>
         <ButtonWrapper>
           <PillButton size="lg" href="#camps">커리큘럼 바로가기</PillButton>
-          <PillButton 
-            size="lg" 
-            href="https://remarkable-staircase-dc5.notion.site/AI-1_-23028eaed3db81b6bf7ec5dcb3467514?pvs=74"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            캠프 시즌1 신청하기
-          </PillButton>
         </ButtonWrapper>
       </ContentWrapper>
     </HeroSection>

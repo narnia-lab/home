@@ -70,6 +70,7 @@ const Header = () => {
           <Nav className="ms-auto">
             <Nav.Link href="#about">교육 핵심</Nav.Link>
             <Nav.Link href="#camps">커리큘럼</Nav.Link>
+            <Nav.Link href="#projects">학생 작품</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

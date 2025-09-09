@@ -63,7 +63,7 @@ const About = () => {
       <Container>
         <Row className="text-center mb-5">
           <Col>
-            <h2 className="gradient-text">나니아랩 교육의 핵심</h2>
+            <h2 className="gradient-text section-title">나니아랩 교육의 핵심</h2>
             <p className="lead text-white-50">우리는 단순한 코딩 기술이나 AI 사용법을 가르치지 않습니다.</p>
           </Col>
         </Row>

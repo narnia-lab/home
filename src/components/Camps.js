@@ -140,7 +140,7 @@ const Camps = () => {
       <Container>
         <Row className="text-center mb-5">
           <Col>
-            <h2 className="gradient-text">교육 커리큘럼</h2>
+            <h2 className="gradient-text section-title">교육 커리큘럼</h2>
             <p className="lead text-white-50">Elite 트랙과 Public 트랙으로 구성된 체계적인 커리큘럼을 만나보세요.</p>
             <TrackSelector>
               <Button 

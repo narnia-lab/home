@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Camps from './components/Camps';
+import Projects from './components/Projects';
 import Footer from './components/Footer';
 import { RiKakaoTalkFill } from 'react-icons/ri';
 import './App.css';
@@ -33,6 +34,7 @@ function App() {
         <Hero />
         <About />
         <Camps />
+        <Projects />
       </main>
       <Footer />
       <a 
