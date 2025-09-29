@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { projects } from '../projectsData';
 
 const ProjectsSection = styled.section`
@@ -17,7 +18,7 @@ const Subtitle = styled.p`
   color: var(--text-color-darker);
 `;
 
-const ProjectCard = styled.div`
+const ProjectCard = styled(motion.div)`
   background: var(--glass-bg);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -44,6 +45,28 @@ const ProjectCard = styled.div`
   }
 `;
 
+const StyledProjectButton = styled(Button)`
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color) !important;
+  border: none;
+  border-radius: 15px;
+  padding: 0.8rem 2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: linear-gradient(90deg, var(--accent-color-2), var(--accent-color-1));
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+    color: white !important;
+  }
+`;
+
+const cardVariants = {
+  offscreen: { y: 50, opacity: 0 },
+  onscreen: { y: 0, opacity: 1, transition: { type: "spring", bounce: 0.4, duration: 0.8 } }
+};
+
 const Projects = () => {
   return (
     <ProjectsSection id="projects">
@@ -56,14 +79,14 @@ const Projects = () => {
         </Row>
         <Row xs={1} md={3} lg={5} className="g-3 justify-content-center">
           {projects.map((project, index) => (
-            <Col key={index} className="d-flex">
-              <ProjectCard>
+            <Col key={index} xs={12} className="d-flex justify-content-center">
+              <ProjectCard initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.2 }} variants={cardVariants}>
                 <h4 className="fw-bold gradient-text">{project.title}</h4>
                 <p className="flex-grow-1">{project.description}</p>
                 <p className="mb-2 text-muted">{project.student}</p>
-                <Button variant="outline-light" href={project.link} target="_blank" rel="noopener noreferrer" className="mt-auto">
+                <StyledProjectButton href={project.link} target="_blank" rel="noopener noreferrer" className="mt-auto">
                   프로젝트 보기
-                </Button>
+                </StyledProjectButton>
               </ProjectCard>
             </Col>
           ))}
