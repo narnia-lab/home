@@ -6,6 +6,7 @@ import About from './components/About';
 import Camps from './components/Camps';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import FloatingButton from './components/FloatingButton';
 import { RiKakaoTalkFill } from 'react-icons/ri';
 import './App.css';
 
@@ -30,6 +31,7 @@ function App() {
         <meta property="twitter:image" content="https://narnia-lab.github.io/home/logo.jpg" />
       </Helmet>
       <Header />
+      <FloatingButton />
       <main>
         <Hero />
         <About />

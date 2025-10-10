@@ -22,7 +22,7 @@ const StyledNavbar = styled(Navbar)`
   
   .navbar-brand {
     display: flex;
-    align-items: center;
+    align-items-center;
     font-weight: 700;
   }
 
