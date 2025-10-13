@@ -70,7 +70,7 @@ const FloatingLink = styled.a`
 const FloatingButton = () => {
   return (
     <FloatingLink
-      href="https://narnia-lab.duckdns.org:8000/"
+      href="https://narnia-lab.duckdns.org:1111/"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="서비스 바로가기"
